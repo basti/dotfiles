@@ -1,0 +1,38 @@
+[user]
+  name = Slobodan Kovacevic
+  email = basti@orangeiceberg.com
+
+[mergetool]
+  keepBackup = true
+
+[alias]
+  # I'm lazy, so two letters will always trump the full command
+  co = checkout
+  ci = commit
+  cp = cherry-pick
+  st = status
+  br = branch
+  df = diff
+  lg = log -p
+
+  # The first thing I run on a new project. Who has done the most damage
+  who = shortlog -s --
+
+  # random stuff cargoculted from who knows where
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | sort
+
+  tree =  log --oneline --decorate --all --decorate --graph
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = auto
+
+[core]
+  excludesfile = /Users/basti/.gitignore
+  editor = nano
+
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
