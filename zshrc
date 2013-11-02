@@ -18,3 +18,8 @@ plugins=(git brew gem heroku vagrant)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# load separate config files
+for file in ~/.shrc/*.sh; do
+  source "$file"
+done
