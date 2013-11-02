@@ -10,18 +10,22 @@ for file in "$here"/*; do
   name="$(basename "$file" .md)"
   [[ $name = bin ]] && dotname="$name" || dotname=".${name}"
 
-  if ! [[ "install readme README" =~ $name || $name =~ ".plist" || -e ~/$dotname || -d $file/.git ]]; then
+  if ! [[ "install readme README oh-my-zsh" =~ $name || $name =~ ".plist" || -e ~/$dotname || -d $file/.git ]]; then
     ln -sfhv ${file#$HOME/} "${HOME}/${dotname}"
   fi
 done
 
-# this part is not used at the moment
 while read file; do
   bin="bin/${file##*/}"
   fullbin="${here}/${bin}"
+  linksource="${here}/${file}"
+  linktarget="${HOME}/.${file}"
 
   if ! [[ -e "${here}/${file}" ]]; then
     echo "not found: ${file}" >&2
+  elif [[ -e $linksource ]]; then
+    # most likely not a bin/ file, but additional configuration like: oh-my-zsh/custom/basti.zsh-theme
+    ln -sfhv "${linksource}" "${linktarget}"
   elif ! [[ -e $fullbin ]]; then
     ln -sfhv "../${file}" "$fullbin"
     echo "$bin" >> "${here}/.git/info/exclude"
