@@ -26,3 +26,8 @@ source $ZSH/oh-my-zsh.sh
 for file in ~/.shrc/*.sh; do
   source "$file"
 done
+
+if [ `which fortune` ]; then
+  echo ""
+  fortune
+fi
