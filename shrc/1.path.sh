@@ -10,6 +10,9 @@ PATH="/usr/local/sbin:$PATH"
 PATH="/usr/local/bin:$PATH"
 PATH="$HOME/bin:$PATH"
 
+### Added by the Heroku Toolbelt
+PATH="/usr/local/heroku/bin:$PATH"
+
 export PATH
 # hm. don't use consolidate-path - it messes with order of paths, i.e. /usr/local/bin is put after /usr/bin
 # export PATH="$(consolidate-path)"
