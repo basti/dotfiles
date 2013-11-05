@@ -27,6 +27,11 @@ for file in ~/.shrc/*.sh; do
   source "$file"
 done
 
+# taken from http://justinlilly.com/dotfiles/zsh.html
+# man for options: http://linux.die.net/man/1/zshoptions
+# setopt appendhistory autocd nomatch autopushd pushdignoredups promptsubst
+# unsetopt beep
+
 if [ `which fortune` ]; then
   echo ""
   fortune
