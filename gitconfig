@@ -14,6 +14,7 @@
   br = branch
   df = diff
   lg = log -p
+  logm = log --pretty=medium
 
   # The first thing I run on a new project. Who has done the most damage
   who = shortlog -s --
