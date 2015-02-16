@@ -17,7 +17,7 @@ done
 
 # small hack to make sure that simple linking method below
 # works on a brand new machine
-mkdir -p "#{HOME}/.oh-my-zsh/custom/plugins/basti"
+mkdir -p "${HOME}/.oh-my-zsh/custom/plugins/basti"
 
 while read file; do
   bin="bin/${file##*/}"
