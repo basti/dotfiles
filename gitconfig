@@ -1,6 +1,5 @@
-[user]
-  name = Slobodan Kovacevic
-  email = basti@orangeiceberg.com
+[include]
+  path = .gitconfig.local
 
 [mergetool]
   keepBackup = true
@@ -32,10 +31,10 @@
   ui = auto
 
 [core]
-  excludesfile = /Users/basti/.gitignore
-  editor = nano
+  excludesfile = ~/.gitignore
+  editor = vim
 
 [format]
   pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
 [push]
-	default = simple
+  default = simple
