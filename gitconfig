@@ -35,6 +35,12 @@
   editor = vim
 
 [format]
-  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+  # pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+  pretty = shortlog
+[pretty]
+  shortlog = format:%C(auto,yellow)%h%C(auto,magenta)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(7,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D
 [push]
   default = simple
+[user]
+	name = Slobodan Kovačević
+	email = slobodan@axiomq.com

@@ -18,6 +18,15 @@ ZSH_THEME="basti"
 # Example format: plugins=(rails git textmate ruby lighthouse bundler)
 plugins=(git brew gem heroku vagrant basti osx)
 
+# Homebrew shell completions
+# https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  # autoload -Uz compinit
+  # compinit
+fi
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
