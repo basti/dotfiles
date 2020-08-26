@@ -44,3 +44,5 @@
 [user]
 	name = Slobodan Kovačević
 	email = slobodan@axiomq.com
+[pull]
+	rebase = false
