@@ -16,7 +16,7 @@ ZSH_THEME="basti"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse bundler)
-plugins=(git brew gem heroku vagrant basti osx)
+plugins=(git brew gem heroku basti osx)
 
 # Homebrew shell completions
 # https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh

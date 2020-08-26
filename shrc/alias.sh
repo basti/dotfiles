@@ -1,4 +1,5 @@
 alias vmslist="VBoxManage list runningvms"
-# halt vagrant vm and then kill VirtualBox completely (otherwise Parallels will complain that incompatibile VM is running)
-alias vagranthalt="vagrant halt;killall VBoxNetDHCP > /dev/null"
-alias vagrantup="vagrant up;vagrant ssh"
+
+# for current shell set Ruby version in order to ignore .ruby-version
+# this is useful when you have Rails app within Docker and no Ruby locally
+alias rbenvignore="rbenv shell $(rbenv global)"
