@@ -44,5 +44,14 @@
 [user]
 	name = Slobodan Kovačević
 	email = slobodan@axiomq.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAyC1SlKAypXF8CzeK6+StWKT9Ua9lgBw4az1XHHGyG7
 [pull]
 	rebase = false
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
