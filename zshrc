@@ -12,6 +12,10 @@ ZSH_THEME="basti"
 # Example format: plugins=(rails git textmate ruby lighthouse bundler)
 plugins=(git brew gem heroku basti macos)
 
+
+# Add Homebrew to PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Homebrew shell completions
 # https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
 if type brew &>/dev/null; then
