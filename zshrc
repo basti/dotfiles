@@ -31,7 +31,9 @@ for file in ~/.shrc/*.sh; do
 done
 
 # rbenv
-eval "$(rbenv init -)"
+if command -v rbenv >/dev/null 2>&1; then
+  eval "$(rbenv init -)"
+fi
 
 # taken from http://justinlilly.com/dotfiles/zsh.html
 # man for options: http://linux.die.net/man/1/zshoptions
