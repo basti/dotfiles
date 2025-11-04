@@ -7,9 +7,9 @@ Based mostly on Mislav's dotfiles (https://github.com/mislav/dotfiles) and Ryan 
 
 ## Install
 
-    # get oh-my-zsh (https://github.com/robbyrussell/oh-my-zsh)
-    git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+    # get oh-my-zsh (https://ohmyz.sh/#install)
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
     # get my dotfiles
-    git clone git://github.com/basti/dotfiles.git ~/dotfiles
+    git clone git@github.com:basti/dotfiles.git
     ~/dotfiles/install
